@@ -5,19 +5,19 @@ const Info = () => {
     <div className="about_info grid">
 
       <div className="about_box">
-        <box-icon name='award' className="about_icon"></box-icon>
+        <i class='bx bx-award about_icon'></i>
         <h3 className="about_title">Experience</h3>
         <span className="about_subtitle">2 Years working</span>
       </div>
 
       <div className="about_box">
-        <box-icon name='briefcase-alt' className="about_icon"></box-icon>
+        <i class='bx bx-briefcase-alt about_icon'></i>
         <h3 className="about_title">Completed</h3>
         <span className="about_subtitle">20+ Projects</span>
       </div>
 
       <div className="about_box">
-        <box-icon name='support' className="about_icon"></box-icon>
+        <i class='bx bx-support about_icon'></i>
         <h3 className="about_title">Support</h3>
         <span className="about_subtitle">Online 24/7</span>
       </div>
