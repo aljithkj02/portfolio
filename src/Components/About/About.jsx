@@ -14,10 +14,10 @@ const About = () => {
             <img src={AboutImg} alt="AboutImg" className="about_img" />
 
             <div className="about_data">
-                <Info />
+                {/* <Info /> */}
 
                 <p className="about_description">
-                    Aspiring Full Stack Web Developer | Learning MERN Stack at Masai School, Bengaluru, Karnataka
+                An inspired team player, always curious about new problems and learning new things to deliver an out-of-the-box solution with complete ownership.
                 </p>
 
                 <a download="" href={resume} className="button button-flex">Download Resume

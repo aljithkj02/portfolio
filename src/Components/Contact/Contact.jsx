@@ -32,7 +32,7 @@ const Contact = () => {
               <h3 className="contact_card-title">Email</h3>
               <span className="contact_card-data">aljithkj02@gmail.com</span>
 
-              <a href="mailto:aljithkj02@gmail.com" className="contact_button">Write me <i className="bx bx-right-arrow-alt contact_button-icon"></i></a>
+              <a href="mailto:aljithkj02@gmail.com" target="_blank"  className="contact_button">Write me <i className="bx bx-right-arrow-alt contact_button-icon"></i></a>
             </div>
 
             <div className="contact_card">
@@ -41,7 +41,7 @@ const Contact = () => {
               <h3 className="contact_card-title">Whatsapp</h3>
               <span className="contact_card-data">7356837832</span>
 
-              <a href="" className="contact_button">Write me <i className="bx bx-right-arrow-alt contact_button-icon"></i></a>
+              <a href="https://wa.me/917356837832" target="_blank" className="contact_button">Write me <i className="bx bx-right-arrow-alt contact_button-icon"></i></a>
             </div>
 
           </div>

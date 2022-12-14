@@ -1,6 +1,19 @@
-.project_container {
-    
+/* #img1,
+#img2 {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+} */
+
 .project_item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,24 +33,24 @@
     width: 100%;
 }
 
-.project_item-btndiv > button {
+.project_item-btndiv  button {
     padding: 12px 20px;
-    margin: 1.5rem 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0;
 }
 
-.project_item-btndiv > button:first-child {
+.project_item-btndiv  button:first-child {
     background-color: transparent;
     border: 2px solid var(--title-color);
     border-radius: 6px;
     transition: .3s ease-in-out;
 }
 
-.project_item-btndiv > button:first-child:hover {
+.project_item-btndiv  button:first-child:hover {
     background-color: var(--title-color);
     color: var(--body-color);
 }
 
-.project_item-btndiv > button:last-child {
+.project_item-btndiv  button:last-child {
     background-color: var(--title-color);
     border: 2px solid var(--body-color);
     color: var(--body-color);
@@ -45,11 +58,24 @@
     transition: .3s ease-in-out;
 }
 
-.project_item-btndiv > button:last-child:hover {
+.project_item-btndiv  button:last-child:hover {
     background-color: transparent;
     border: 2px solid var(--title-color);
     color: var(--title-color);
     border-radius: 6px;
+}
+
+.tech_stack {
+    font-size: 1.1rem;
+    color: var(--title-color-dark);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.tech_stack span {
+    font-size: 1rem;
+    color: var(--title-color);
+    font-weight: 400;
 }
 
         /* BREAK POINTS  */
