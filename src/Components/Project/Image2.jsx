@@ -8,7 +8,6 @@ const Image2 = (props) => {
     if(id) clearInterval(id);
     id = setInterval(()=> {
         if(k == 6) k = 0;
-        console.log(k);
         let img = document.getElementById("img2");
         img.src = imgs[k];
         k++;

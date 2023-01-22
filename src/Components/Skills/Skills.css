@@ -1,10 +1,10 @@
 /* Enable when add the Backend Component */
 
-/* .skills_container {
+.skills_container {
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
     justify-content: center;
-} */
+}
 
 .skills_content {
     background-color: var(--container-color);
@@ -57,10 +57,10 @@
 @media screen  and (max-width: 992px){
     /* Enable when add the Backend Component */
 
-    /* .skills_container {
+    .skills_container {
         grid-template-columns: max-content;
         row-gap: 2rem;
-    } */
+    }
 }
   
   /* For Medium Devices */

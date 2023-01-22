@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="footer_container container">
             <h1 className="footer_title">Aljith</h1>
 
-            <ul className="footer_list">
+            <ul className="footer_list"> 
                 <li>
                     <a href="#about" className="footer_link">About</a>
                 </li>
 
                 <li>
-                    <a href="#projects" className="footer_link">Projects</a>
+                    <a href="#project" className="footer_link">Projects</a>
                 </li>
 
                 <li>

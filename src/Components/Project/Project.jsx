@@ -62,7 +62,7 @@ const Project = () => {
 
             <div className="project_item-btndiv">
             <a href="https://github.com/adilrana03/BigBasket_Clone" target='_blank' > <button>Github</button> </a>
-              <a href="https://strong-kangaroo-b6ed10.netlify.app/" target='_blank' ><button>Demo <i className="bx bx-right-arrow-alt contact_button-icon"></i></button> </a>
+              <a href="https://big-basket1.netlify.app/" target='_blank' ><button>Demo <i className="bx bx-right-arrow-alt contact_button-icon"></i></button> </a>
             </div>
 
           </div>
