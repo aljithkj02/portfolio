@@ -26,7 +26,7 @@
 
 .home_title {
     font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-25);   
+    margin-bottom: var(--mb-0-25);
 }
 
 .home_hand {
@@ -59,7 +59,7 @@
 }
 
 .home_img {
-    background: url(../../Assets//Aljith.jpg);
+    background: url(../../Assets//Aljith.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -75,9 +75,11 @@
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+
     50% {
         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
+
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
@@ -88,16 +90,18 @@
 }
 
 .wheel {
-    animation: scroll 2s ease  infinite;
+    animation: scroll 2s ease infinite;
 }
 
 @keyframes scroll {
     0% {
         transform: translateY(0);
     }
+
     30% {
         transform: translateY(3.75rem);
     }
+
     0% {
         transform: translateY(0);
     }
@@ -120,9 +124,9 @@
     color: var(--title-color);
 }
 
-        /* BREAK POINTS  */
+/* BREAK POINTS  */
 /* For Large Devices */
-@media screen  and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .home_content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
@@ -158,9 +162,9 @@
         margin-left: 7.5rem;
     }
 }
-  
-  /* For Medium Devices */
-@media screen  and (max-width: 768px){
+
+/* For Medium Devices */
+@media screen and (max-width: 768px) {
     .home_content {
         grid-template-columns: 0.5fr 3fr;
         padding-top: 3.5rem;
@@ -181,11 +185,11 @@
     .home_scroll {
         display: none;
     }
-    
+
 }
 
-  /* For Small Devices */
-@media screen  and (max-width: 350px){
+/* For Small Devices */
+@media screen and (max-width: 350px) {
     .home_img {
         width: 180px;
         height: 180px;
@@ -196,5 +200,3 @@
         height: 22px;
     }
 }
-  
-  

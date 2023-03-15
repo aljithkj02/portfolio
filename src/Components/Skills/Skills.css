@@ -9,7 +9,8 @@
 .skills_content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
+    padding-top: 2.5rem;
     border-radius: 1.25rem;
 }
 
@@ -29,7 +30,7 @@
 .skills_group {
     display: grid;
     align-items: flex-start;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
 }
 
 .skills_data {
@@ -52,9 +53,9 @@
     font-size: var(--tiny-font-size);
 }
 
-        /* BREAK POINTS  */
+/* BREAK POINTS  */
 /* For Large Devices */
-@media screen  and (max-width: 992px){
+@media screen and (max-width: 992px) {
     /* Enable when add the Backend Component */
 
     .skills_container {
@@ -62,9 +63,9 @@
         row-gap: 2rem;
     }
 }
-  
-  /* For Medium Devices */
-@media screen  and (max-width: 768px){
+
+/* For Medium Devices */
+@media screen and (max-width: 768px) {
     .skills_container {
         grid-template-columns: 1fr;
     }
@@ -73,9 +74,9 @@
         padding: 1.5rem;
     }
 }
-  
-  /* For Small Devices */
-@media screen  and (max-width: 350px){
+
+/* For Small Devices */
+@media screen and (max-width: 350px) {
     .skills_box {
         column-gap: 1.25rem;
     }
@@ -84,6 +85,3 @@
         font-size: var(--small-font-size);
     }
 }
-  
-  
-  
