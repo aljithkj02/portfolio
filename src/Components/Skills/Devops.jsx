@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Frontend = () => {
+const Devops = () => {
     return (
         <div className="skills_content">
-            <h3 className="skills_title">Frontend</h3>
+            <h3 className="skills_title">DevOps</h3>
 
             <div className="skills_box">
                 <div className="skills_group">
@@ -12,7 +12,7 @@ const Frontend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">React JS</h3>
+                            <h3 className="skills_name">Docker</h3>
                         </div>
                     </div>
 
@@ -20,7 +20,7 @@ const Frontend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">Next JS</h3>
+                            <h3 className="skills_name">AWS</h3>
                         </div>
                     </div>
 
@@ -28,15 +28,7 @@ const Frontend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">Redux</h3>
-                        </div>
-                    </div>
-
-                    <div className="skills_data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills_name">Axios</h3>
+                            <h3 className="skills_name">Git</h3>
                         </div>
                     </div>
 
@@ -48,31 +40,23 @@ const Frontend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">Material UI</h3>
+                            <h3 className="skills_name">CI/CD</h3>
                         </div>
                     </div>
 
-                    <div className="skills_data">
+                    <div className="skills_data" style={{visibility: 'hidden'}}>
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">Tailwind CSS</h3>
+                            <h3 className="skills_name"></h3>
                         </div>
                     </div>
 
-                    <div className="skills_data">
+                    <div className="skills_data" style={{visibility: 'hidden'}}>
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">Chart JS</h3>
-                        </div>
-                    </div>
-
-                    <div className="skills_data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills_name">Ant design</h3>
+                            <h3 className="skills_name"></h3>
                         </div>
                     </div>
 
@@ -82,4 +66,4 @@ const Frontend = () => {
     )
 }
 
-export default Frontend
+export default Devops;

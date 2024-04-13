@@ -1,22 +1,7 @@
 import React from 'react';
-import Image1 from './Image1.jsx';
-import Image2 from './Image2.jsx';
 import Image3 from './Image3.jsx';
 import Image4 from './Image4.jsx';
 
-import { useState } from 'react';
-import bb1 from '../../Assets/bb1.png';
-import bb2 from '../../Assets/bb2.png';
-import bb3 from '../../Assets/bb3.png';
-import bb4 from '../../Assets/bb4.png';
-import bb5 from '../../Assets/bb5.png';
-import bb6 from '../../Assets/bb6.png';
-import fc1 from '../../Assets/fc1.png';
-import fc2 from '../../Assets/fc2.png';
-import fc3 from '../../Assets/fc3.png';
-import fc4 from '../../Assets/fc4.png';
-import fc5 from '../../Assets/fc5.png';
-import fc6 from '../../Assets/fc6.png';
 import px1 from '../../Assets/px1.png';
 import px2 from '../../Assets/px2.png';
 import px3 from '../../Assets/px3.png';
@@ -29,10 +14,9 @@ import vi3 from '../../Assets/vi3.png';
 import vi4 from '../../Assets/vi4.png';
 import vi5 from '../../Assets/vi5.png';
 import vi6 from '../../Assets/vi6.png';
+import lw from '../../Assets/lw.png'
 import './Project.css';
 
-const fcArr = [fc1, fc2, fc3, fc4, fc5, fc6];
-const bbArr = [bb1, bb2, bb3, bb4, bb5, bb6];
 const pxArr = [px1, px2, px3, px4, px5, px6];
 const viArr = [vi1, vi2, vi3, vi4, vi5, vi6];
 
@@ -45,6 +29,26 @@ const Project = () => {
       <span className="section_subtitle">works</span>
 
       <div className="project_container container">
+
+      <div className="project_item">
+        <div className="project_img-div">
+          <img className src={lw} id="fcImg" alt="Project Img"/>
+          {/* <Image3 imgs={pxArr} /> */}
+        </div>
+
+        <div>
+          <h3>Linework</h3>
+          <p>
+            Linework is a multifunctional app that serves as a marketplace for products, services, and art, while also providing social networking and crypto-based banking features. Divided into E-commerce, Social Media, and Web3 components, Linework aims to streamline daily life into one user-friendly platform.
+          </p>
+          <p className="tech_stack">Tech Stack <span>- React JS, Express JS, Nest JS, MySQL, Prisma, Material-UI</span></p>
+
+          <div className="project_item-btndiv">
+            {/* <a href="https://github.com/aljithkj02/pixhub-client" target='_blank' rel="noreferrer" > <button>Github</button> </a> */}
+            <a href="https://linework.app/" target='_blank' rel="noreferrer" > <button>Website <i className="bx bx-right-arrow-alt "></i></button></a>
+          </div>
+        </div>
+      </div>
 
         <div className="project_item">
           <div className="project_img-div">
@@ -81,46 +85,6 @@ const Project = () => {
             </div>
           </div>
         </div>
-
-        <div className="project_item">
-          <div className="project_img-div">
-            {/* <img className src={fc} id="fcImg" alt="Project Img"/> */}
-            <Image1 imgs={fcArr} />
-          </div>
-
-          <div>
-            <h3>First Cry</h3>
-            <p>FirstCry.com - This project is an e-commerce application for kids' products,
-              providing customers with a seamless shopping experience.</p>
-            <p className="tech_stack">Tech Stack <span>- HTML, CSS, Javascript, Node JS, Express, MongoDB</span></p>
-
-            <div className="project_item-btndiv">
-              <a href="https://github.com/aljithkj02/FirstCry-Backend" target='_blank' rel="noreferrer" > <button>Github</button> </a>
-              <a href="https://first-cry.netlify.app/" target='_blank' rel="noreferrer" > <button>Demo <i className="bx bx-right-arrow-alt "></i></button></a>
-            </div>
-          </div>
-        </div>
-
-        <div className="project_item">
-          <div className="project_img-div">
-            {/* <img src={bb1} alt="Project Img"/> */}
-            <Image2 imgs={bbArr} />
-          </div>
-
-          <div>
-
-            <h3>Big Basket</h3>
-            <p>Bigbasket.com is India’s largest online food and grocery store. Bigbasket created for buying fresh Fruits and Vegetables, Rice and Dals...</p>
-            <p className="tech_stack">Tech Stack <span>- HTML, CSS, Javascript</span></p>
-
-            <div className="project_item-btndiv">
-              <a href="https://github.com/adilrana03/BigBasket_Clone" target='_blank' rel="noreferrer" > <button>Github</button> </a>
-              <a href="https://big-basket1.netlify.app/" target='_blank' rel="noreferrer" ><button>Demo <i className="bx bx-right-arrow-alt contact_button-icon"></i></button> </a>
-            </div>
-
-          </div>
-        </div>
-
       </div>
     </section>
   )

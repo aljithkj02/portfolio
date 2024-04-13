@@ -22,15 +22,18 @@
 }
 
 .skills_box {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     column-gap: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .skills_group {
     display: grid;
     align-items: flex-start;
     row-gap: 1.5rem;
+    justify-content: center;
 }
 
 .skills_data {
@@ -44,9 +47,10 @@
 }
 
 .skills_name {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     line-height: 18px;
+    color: var(--text-color)
 }
 
 .skills_level {
