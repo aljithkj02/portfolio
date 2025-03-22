@@ -17,7 +17,7 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -30,23 +30,24 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
   ];
 
   return (
-    <motion.header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-      }`}
+    <motion.header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <motion.div 
+        <motion.div
           className="text-xl font-bold"
           whileHover={{ scale: 1.05 }}
         >
-          <span className={isScrolled ? 'text-blue-600' : 'text-white'}>Aljith</span>
-          <span className={isScrolled ? 'text-gray-800' : 'text-blue-300'}>.dev</span>
+          <a href='#'>
+            <span className={isScrolled ? 'text-blue-600' : 'text-white'}>Aljith</span>
+            <span className={isScrolled ? 'text-gray-800' : 'text-blue-300'}>.dev</span>
+          </a>
         </motion.div>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
@@ -55,11 +56,10 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <button 
+                <button
                   onClick={() => scrollToSection(item.ref)}
-                  className={`${
-                    isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-300'
-                  } font-medium transition-colors`}
+                  className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-300'
+                    } font-medium transition-colors`}
                 >
                   {item.name}
                 </button>
@@ -67,9 +67,9 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
             ))}
           </ul>
         </nav>
-        
+
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-2xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -78,10 +78,10 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
           </span>
         </button>
       </div>
-      
+
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <motion.div 
+        <motion.div
           className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
@@ -90,7 +90,7 @@ const Header = ({ scrollToSection, aboutRef, skillsRef, projectsRef, contactRef 
           <ul className="py-4">
             {navItems.map((item, index) => (
               <li key={index} className="px-4 py-2">
-                <button 
+                <button
                   onClick={() => {
                     scrollToSection(item.ref);
                     setIsMobileMenuOpen(false);
